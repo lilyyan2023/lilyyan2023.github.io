@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dopefolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <span class="header__logo-sub">Mingze Yan</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+              <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="./index.html#software-projects">
+                      Software Engineer Projects
+                    </a>  
+                    <a href="./index.html#product-projects">
+                      Product Manager Projects
+                    </a>
+                    <a href="./index.html#data-projects">
+                      Data Analytics Projects
+                    </a>
+                    <a href="./index.html#leadership-projects">
+                      Leadership Project
+                    </a>
+                    <a href="./index.html#design-projects">
+                      Design Project
+                    </a>                 
+                </div> 
+              </div>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+       
+        <p class="welcome-word">
+          Welcome to Lily's Portfolio Universe!
+          <br>
+          欢迎来到颜铭泽的作品集宇宙！
+        </p>
+       
+        <ul id="circle-container">     
+         
+          <li>
+            <img src="img/data science logo.png" />
+          </li>
+          <li>
+            <img src="img/design.webp" />
+          </li>
+          <li>
+            <img src="img/music_pic.jpg" />
+          </li>
+          <li>
+            <img src="img/1091_northwestern_wildcats-partial-1981.png" />
+          </li>
+          <li>
+            <img src="img/cs.jpg" />
+          </li>
+          <li>
+            <img src="img/product-insights-header.png" />
+          </li>
+        </ul>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hello, I'm Lily Yan!
+
+            I'm a Northwestern senior majoring in computer science and minoring in data science and economics, also pursuing a Segal Design Certificate.
+            
+            I'm a software engineer and product manager passionate about using technology to innovate for social change. 
+            I'm also a confident communicator and a detail-oriented problem-solver. In my free time, I love to swim, boxing, and dance. 
+            See more of my work here and contact me at lilyyan2023@u.northwestern.edu!
+              </p>
+            </div>
+          </div>
+          <div class="about__content-skills">
+            <div class="skills">
+              <img src="img/headshot.jpg" alt="headshot" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="software-projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Software Engineer Projects</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/doordash-logo-500.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">DoorDash Intern Full Stack Project</h3>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/Amazon_logo.svg.webp"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Amazon Intern Backend Project</h3>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/marketplace.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">NFT Marketplace For Decentralized Loan</h3>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/preprocessed picture.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Argonne National Laboratory Flood Depth Estimation Project</h3>
+              <a
+                href="./project-4.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="product-projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Product Manager Projects</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/rocktechx logo.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">RockTechX APM Internship</h3>
+              <a
+                href="./project-5.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/GNP_Logo_RGB.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">GNP Maintenance Coordination Website Project </h3>
+              <a
+                href="./project-6.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/pnc bank logo.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Trix4Kids Project at PNC Bank Hackathon</h3>
+              <a
+                href="./project-7.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="data-projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Data Analytics Project</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/Meta_Platforms_Inc._logo.svg.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Facebook Data Challenge</h3>
+              <a
+                href="./project-8.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+    </section>
+    <section id="leadership-projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Leadership Project</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/mega_logo.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Mega Hackathon</h3>
+              <a
+                href="./project-9.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+    </section>
+    <section id="design-projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Design Project </span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="img/design details.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Forest Preserve of Cook County Parking System Redesign Project</h3>
+              <a
+                href="./project-10.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Project Details</a
+              >
+            </div>
+          </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

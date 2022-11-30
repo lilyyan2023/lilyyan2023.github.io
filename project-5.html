@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Case Study of Project 1</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Lily Yan</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Argonne National Laboratory Project</h1>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <div class="project-details__tools-used">
+                <h3 class="project-details__content-title">Tools Used</h3>
+                <div class="skills">
+                  <div class="skills__skill">Computer Vision</div>
+                  <div class="skills__skill">Machine Learning</div>
+                  <div class="skills__skill">Web Scrapingo</div>
+                </div>
+              </div>
+              <h3 class="project-details__content-title">Problem</h3>
+              <p class="project-details__desc-para">
+                As global climate change became more severe, flood happened more frequently. 
+                If we were able to use Computer Vision to estimate the flood depth directly using real-time taken images, it would help us save more lives. 
+              </p>
+              <h3 class="project-details__content-title">My Role</h3>
+              <p class="project-details__desc-para">
+                It was an independent research project and I read research paper to learn some existing algorithms. 
+                I also picked up computer vision algorithm and web scraping. 
+              </p>
+              <h3 class="project-details__content-title">Solution</h3>
+              <p class="project-details__desc-para">
+                1. I used web scraping tool to collect training and testing data from different social media platforms.
+                <br>
+                2. I used facial recognition algorithm to recognize humans and segmentation algorithm to segment the picture into separate parts. 
+                <br>
+                3. Then, we can calculate the flood depth by following a specific formula. 
+              </p>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 2</div>
+                  <img src="img/raw picture.png" style="width:50%">
+                  <img src="img/preprocessed picture.png" style="width:50%"> 
+                  <div class="text">Raw crowdsourced image of humans in flood affected area </div>
+                  <div class="text">Preprocessed image and output of Face Detection Algorithm </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 2</div>
+                  <img src="img/semantic segmentation output.png" style="width:100%">
+                  <img src="img/statistics result.png" style="width:100%">
+                  <div class="text">Output of Semantic Segmentation Algorithm</div>
+                  <div class="text">Estimated Statistics</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <button class="w3-button w3-black w3-display-left" 
+                style="border:none; display:inline-block; position:absolute; margin-top:20px;  padding:8px 16px; vertical-align:middle; text-align:left; white-space:nowrap;" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" 
+                style="border:none;display:inline-block;padding:8px 16px;vertical-align:middle; text-align:left; white-space:nowrap;" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+              <br>
+              <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+
+              <h3 class="project-details__content-title">Result</h3>
+              <p class="project-details__desc-para">
+                I successfully developed the algorithm and presented my research result to the team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
